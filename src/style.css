@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.home {
+    text-align: center;
+}
+
+/* Header general */
+.header {
+    padding: 20px 20px;
+    display: flex;                  /* activa flexbox */
+    justify-content: flex-end;      /* empuja los links a la derecha */
+    align-items: center;
+    color: #f1efef;            /* centra verticalmente */
+}
+
+.title {
+    text-align: center;
+}
+.content {
+    text-align: center;
+}
+/* Lista de links en el header */
+.header#heading {
+    list-style: none;   /* elimina viñetas */
+    display: flex;      /* coloca los <li> en línea */
+    gap: 20px;          /* espacio entre links */
+    margin: 0;
+    padding: 0;
+}
+
+#heading li a {
+    color: #080808;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#heading li a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    border: 10px solid #333;
+    border-radius: 0%;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
