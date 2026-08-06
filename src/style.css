@@ -1,77 +1,117 @@
+/* 🎨 Modern Portfolio Styles */
+
+/* Root variables for easy theming */
+:root {
+  --primary-color: #0d6efd;   /* Bootstrap blue */
+  --secondary-color: #6c757d; /* Neutral gray */
+  --bg-light: #f8f9fa;
+  --bg-dark: #212529;
+  --text-light: #ffffff;
+  --text-dark: #212529;
+}
+
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
 
-.home {
-    text-align: center;
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
 }
 
-/* Header general */
-.header {
-    padding: 20px 20px;
-    display: flex;                  /* activa flexbox */
-    justify-content: flex-end;      /* empuja los links a la derecha */
-    align-items: center;
-    color: #f1efef;            /* centra verticalmente */
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.title {
-    text-align: center;
-}
-.content {
-    text-align: center;
-}
-/* Lista de links en el header */
-.header#heading {
-    list-style: none;   /* elimina viñetas */
-    display: flex;      /* coloca los <li> en línea */
-    gap: 20px;          /* espacio entre links */
-    margin: 0;
-    padding: 0;
+.nav-link {
+  transition: color 0.3s ease;
 }
 
-#heading li a {
-    color: #080808;
-    text-decoration: none;
-    font-weight: bold;
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
-#heading li a:hover {
-    text-decoration: underline;
+/* Hero Section */
+header {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: var(--text-light);
+  border-radius: 12px;
 }
 
-.form {
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 10px auto;
-    width: 300px;
-    border: 10px solid #333;
-    border-radius: 0%;
+header h1 {
+  font-weight: 700;
 }
 
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-align: center;
+header .btn-primary {
+  background-color: var(--text-light);
+  color: var(--primary-color);
+  border: none;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
+header .btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
 }
 
-  
+/* Section Titles */
+section h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 8px;
+}
+
+/* Dark Mode (optional toggle) */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #343a40, #0d6efd);
+}
+
+body.dark-mode .card {
+  background-color: #2c2f33;
+  color: var(--text-light);
 }
