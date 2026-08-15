@@ -124,3 +124,11 @@ body.dark-mode .card {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+a {
+  color: #0077b5; /* azul estilo LinkedIn */
+  text-decoration: none; /* quita el subrayado */
+}
+
+a:hover {
+  text-decoration: underline; /* aparece subrayado al pasar el mouse */
+}
