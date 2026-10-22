@@ -3,119 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portafolio - Cesar De la Rosa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Cesar De la Rosa – Desarrollador y analista de datos</title>
+  <meta name="description" content="Portafolio de Cesar De la Rosa: desarrollo web, análisis de datos, aplicaciones de escritorio y ciberseguridad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="index.html">Bienvenido a mi Portafolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-outline-secondary ms-3">🌙</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero-section text-center text-light d-flex align-items-center justify-content-center">
-    <div class="container">
-      <h1 class="display-3 fw-bold">¡Hola, soy Cesar De la Rosa!</h1>
-      <p class="lead mb-4">Desarrollador <strong>Web, Análista de Datos, Creador de Desktop Apps y Analista-Jr en Ciberseguridad</strong>.</p>
-      <a class="btn btn-light btn-lg me-2" href="proyectos.html">Ver Proyectos</a>
-      <a class="btn btn-outline-light btn-lg" href="about.html">Conóceme más</a>
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Cesar De la Rosa</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contact.html">Contacto</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Cambiar a modo oscuro">🌙</button>
+      </nav>
     </div>
   </header>
-  <!-- SOBRE MI -->
-  <section id="sobre-mi" class="mb-5 text-center">
-	<h2>Sobre mí</h2>
-	<div class="d-flex flex-column align-items-center">
-		<!-- Imagen -->
-		<img src="src/img/foto_perfil.jpeg" alt="Foto de Cesar De la Rosa"
-			class="img-fluid rounded-circle shadow-lg mb-3" style="max-width: 250px;">
-		<!-- Texto -->
-		<p class="lead">
-		Soy <strong>Cesar De la Rosa</strong>, un desarrollador apasionado creando soluciones digitales innovadoras.
-		</p>
-		<p>
-		Mi experiencia abarca <strong>análisis de datos, desarrollo web, aplicaciones de escritorio y ciberseguridad</strong>.  
-		Me enfoco en transformar ideas en proyectos funcionales y atractivos que impacten positivamente.
-		</p>
-		<a href="about.html" class="btn btn-primary mt-3">Conóceme más</a>
-	</div>
-  </section>
-  <!-- PROYECTOS DESTACADOS -->
-  <section class="container mt-5">
-    <h2 class="text-center mb-4">Proyectos Destacados</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="src/img/Portafolio_pic.png" class="card-img-top" alt="Proyecto Web">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto Web</h5>
-            <p class="card-text">Aplicación web responsiva con Node.js y Bootstrap.</p>
-            <a href="proyectos.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="src/img/Screenshot.png" class="card-img-top" alt="Proyecto Video">
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7474919347531071489/" target="_blank"> Ver mi video en LinkedIn
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Demo en Video</h5>
-            <p class="card-text">Presentación en video mostrando funcionalidades clave.</p>
-            <a href="proyectos.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="src/img/Screen.png" class="card-img-top" alt="Proyecto Desktop">
-          <div class="card-body">
-            <h5 class="card-title">Aplicación de Escritorio</h5>
-            <p class="card-text">Software creado con Python y Tkinter.</p>
-            <a href="proyectos.html" class="btn btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONTACTO PREVIEW -->
-  <section class="container mt-5 text-center">
-    <h2>Contacto</h2>
-    <p>¿Quieres colaborar o tienes una idea? Escríbeme a: 
-      <a href="mailto:cdelarosamota1@gmail.com">cdelarosamota1@gmail.com</a>
-    </p> 
-    <a href="contact.html" class="btn btn-outline-primary">Ir al formulario</a>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Cesar De la Rosa</h1>
+          <p class="lead">Desarrollo aplicaciones web y de escritorio, analizo datos y detecto fraude. Convierto datos desordenados en herramientas que la gente puede usar.</p>
+          <div class="actions">
+            <a class="btn" href="proyectos.html">Ver proyectos</a>
+            <a class="btn ghost" href="contact.html">Escríbeme</a>
+          </div>
+        </div>
+        <img class="portrait" src="src/img/foto_perfil.jpeg" alt="Foto de Cesar De la Rosa">
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-light text-center py-3 mt-5">
-    <p>&copy; 2026 Cesar De la Rosa. Todos los derechos reservados.</p>
+    <section id="areas">
+      <div class="wrap">
+        <h2>Lo que hago</h2>
+        <div class="areas">
+          <div class="area data"><h3>Análisis de datos</h3><p>SQL, Python y Power BI para limpiar, modelar y visualizar información.</p></div>
+          <div class="area web"><h3>Desarrollo web</h3><p>Sitios y aplicaciones responsivas con HTML, CSS, JavaScript y Node.js.</p></div>
+          <div class="area apps"><h3>Aplicaciones de escritorio</h3><p>Herramientas con Python (Tkinter, PyInstaller) y C#.</p></div>
+          <div class="area sec"><h3>Ciberseguridad</h3><p>Detección de fraude, buenas prácticas y análisis de riesgos (nivel junior).</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="wrap">
+        <h2>Proyectos destacados</h2>
+
+        <article class="project">
+          <img src="src/img/Portafolio_pic.png" alt="Captura de este portafolio" loading="lazy">
+          <div>
+            <h3>Este portafolio</h3>
+            <p>Sitio responsivo con modo claro y oscuro, donde reúno mis proyectos y habilidades.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="src/img/Screenshot.png" alt="Demo en video de ClaimApp" loading="lazy">
+          <div>
+            <h3>ClaimApp: demo en video</h3>
+            <p>Aplicación de escritorio en Python para análisis de datos. Mira cómo funciona en el video.</p>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7474919347531071489/" target="_blank" rel="noopener">Ver el video en LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="src/img/Screen.png" alt="Pantalla de la aplicación ClaimApp" loading="lazy">
+          <div>
+            <h3>ClaimApp: la aplicación</h3>
+            <p>Interfaz de escritorio creada con Python y Tkinter.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="repos">
+      <div class="wrap">
+        <h2>Aplicaciones en línea y código</h2>
+
+        <article class="project">
+          <img src="https://raw.githubusercontent.com/Cesar-Git-Hub/Claim_App_Web/main/ClaimApp.png" alt="Captura de ClaimApp" onerror="this.remove()">
+          <div>
+            <h3>ClaimApp</h3>
+            <p>Aplicación web que limpia y organiza datos para que sean fáciles de revisar y usar.</p>
+            <ul class="tags"><li>Front-end</li><li>Back-end</li></ul>
+            <p class="links">
+              <a href="https://claimapp.online" target="_blank" rel="noopener">Ver en línea</a>
+              <a href="https://github.com/Cesar-Git-Hub/Claim_App_Web" target="_blank" rel="noopener">Código en GitHub</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://raw.githubusercontent.com/Cesar-Git-Hub/ChatApp/main/chatapp.png" alt="Captura de ChatApp" onerror="this.remove()">
+          <div>
+            <h3>ChatApp</h3>
+            <p>Aplicación de chat en línea, con interfaz propia y servidor.</p>
+            <ul class="tags"><li>Front-end: React</li><li>Back-end: Node.js</li></ul>
+            <p class="links">
+              <a href="https://chatapp.lat" target="_blank" rel="noopener">Ver en línea</a>
+              <a href="https://github.com/Cesar-Git-Hub/ChatApp" target="_blank" rel="noopener">Código en GitHub</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project no-img">
+          <div>
+            <h3>Mi perfil de GitHub</h3>
+            <p>Mi perfil en GitHub, con todos mis repositorios y mi actividad.</p>
+            <p class="links">
+              <a href="https://github.com/Cesar-Git-Hub/Cesar-Git-Hub" target="_blank" rel="noopener">Ver repositorio del perfil</a>
+              <a href="https://github.com/Cesar-Git-Hub" target="_blank" rel="noopener">Ver mi perfil</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Escríbeme a <a href="mailto:cdelarosamota1@gmail.com">cdelarosamota1@gmail.com</a> o usa el formulario.</p>
+        <div class="actions"><a class="btn" href="contact.html">Ir al formulario</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><p>&copy; 2026 Cesar De la Rosa. Todos los derechos reservados.</p></div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const toggleBtn = document.getElementById('darkModeToggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
